@@ -1,0 +1,255 @@
+[
+	{
+		"id": "friendship_potential",
+		"name": "Potential Friendship",
+		"type": "peaceful",
+		"text": "[SOLDIER1] and [SOLDIER2] have been getting along well. They find they share similar backgrounds.",
+		"trigger_tags": ["relationship"],
+		"trigger_chance": 0.7,
+		"requires_soldiers": 2,
+		"soldier_filters": ["relationship>40", "relationship<50"],
+		"choices": [
+			{
+				"text": "Encourage them to spend time together",
+				"id": "encourage",
+				"expressed_trait": "Adaptable",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": 15
+					}
+				]
+			},
+			{
+				"text": "Keep the focus on military discipline",
+				"id": "discipline",
+				"expressed_trait": "Disciplined",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": 5
+					},
+					{
+						"type": 0,
+						"target": "all",
+						"stat": "andreia",
+						"value": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "rivalry_potential",
+		"name": "Growing Tension",
+		"type": "peaceful",
+		"text": "[SOLDIER1] and [SOLDIER2] have been arguing over battle tactics. The disagreement is becoming personal.",
+		"trigger_tags": ["relationship"],
+		"trigger_chance": 0.7,
+		"requires_soldiers": 2,
+		"soldier_filters": ["relationship<-40", "relationship>-50"],
+		"choices": [
+			{
+				"text": "Intervene and make peace",
+				"id": "intervene",
+				"expressed_trait": "Inspiring",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": 20
+					}
+				]
+			},
+			{
+				"text": "Let them resolve it themselves",
+				"id": "let_be",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": -15
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "cultural_tension",
+		"name": "Cultural Differences",
+		"type": "peaceful",
+		"text": "[SOLDIER1] and [SOLDIER2] are having trouble understanding each other due to their different backgrounds.",
+		"trigger_tags": ["cultural_tension"],
+		"trigger_chance": 1.0,
+		"requires_soldiers": 2,
+		"soldier_filters": ["different_nationality"],
+		"choices": [
+			{
+				"text": "Help them find common ground",
+				"id": "common_ground",
+				"expressed_trait": "Adaptable",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": 15
+					}
+				]
+			},
+			{
+				"text": "Emphasize obedience to command regardless of origin",
+				"id": "obedience",
+				"expressed_trait": "Disciplined",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": 5
+					},
+					{
+						"type": 0,
+						"target": "all",
+						"stat": "andreia",
+						"value": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "command_resentment",
+		"name": "Command Challenge",
+		"type": "peaceful",
+		"text": "[SOLDIER1] questions [SOLDIER2]'s authority as commander. His experience suggests he knows better.",
+		"trigger_tags": ["command_resentment"],
+		"trigger_chance": 1.0,
+		"requires_soldiers": 2,
+		"soldier_filters": ["commander:second"],
+		"choices": [
+			{
+				"text": "Assert authority forcefully",
+				"id": "assert",
+				"expressed_trait": "Brave",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": -10
+					},
+					{
+						"type": 0,
+						"target": "second",
+						"stat": "morale",
+						"value": -2
+					}
+				]
+			},
+			{
+				"text": "Listen to their advice and incorporate it",
+				"id": "listen",
+				"expressed_trait": "Adaptable",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": 20
+					},
+					{
+						"type": 0,
+						"target": "first",
+						"stat": "logos",
+						"value": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "friendship_formation",
+		"name": "Forming Friendship",
+		"type": "peaceful",
+		"text": "[SOLDIER1] and [SOLDIER2] have been getting along increasingly well. Their friendship could strengthen the unit.",
+		"trigger_tags": ["friendship_potential"],
+		"trigger_chance": 1.0,
+		"requires_soldiers": 2,
+		"soldier_filters": ["relationship>50"],
+		"choices": [
+			{
+				"text": "Encourage their friendship",
+				"id": "encourage",
+				"expressed_trait": "Adaptable",
+				"consequences": [
+					{
+						"type": 7,
+						"target": "self_other"
+					},
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": 15
+					}
+				]
+			},
+			{
+				"text": "Keep relationships professional",
+				"id": "professional",
+				"expressed_trait": "Disciplined",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": -10
+					},
+					{
+						"type": 0,
+						"target": "all",
+						"stat": "andreia",
+						"value": 1
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "rivalry_formation",
+		"name": "Growing Hostility",
+		"type": "peaceful",
+		"text": "The tension between [SOLDIER1] and [SOLDIER2] has grown significant. A rivalry is forming between them.",
+		"trigger_tags": ["rivalry_potential"],
+		"trigger_chance": 1.0,
+		"requires_soldiers": 2,
+		"soldier_filters": ["relationship<-50"],
+		"choices": [
+			{
+				"text": "Attempt to reconcile them",
+				"id": "reconcile",
+				"expressed_trait": "Inspiring",
+				"consequences": [
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": 20
+					}
+				]
+			},
+			{
+				"text": "Let the rivalry stand",
+				"id": "accept_rivalry",
+				"expressed_trait": "Disciplined",
+				"consequences": [
+					{
+						"type": 8,
+						"target": "self_other"
+					},
+					{
+						"type": 3,
+						"target": "self_other",
+						"value": -15
+					}
+				]
+			}
+		]
+	}
+]

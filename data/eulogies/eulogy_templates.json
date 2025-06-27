@@ -1,0 +1,25 @@
+{
+	"close_friend": [
+		"[FALLEN_NAME] was more than a comrade - they were my brother in arms. I'll carry their memory through every battle.",
+		"We shared countless meals and marches together. [FALLEN_NAME]'s laughter could lift the darkest mood. The phalanx feels empty without them.",
+		"From [FALLEN_NATIONALITY] to here, [FALLEN_NAME] and I faced everything together. I promise to honor their sacrifice."
+	],
+	"friend": [
+		"[FALLEN_NAME] was a good soldier and a better friend. Their [FALLEN_TRAIT] spirit will be missed.",
+		"I remember when [FALLEN_NAME] first joined our ranks. They proved themselves in [BATTLES_SURVIVED] battles.",
+		"[FALLEN_NAME] always had our backs. The formation won't be the same without them."
+	],
+	"neutral": [
+		"[FALLEN_NAME] served with honor. Their duty is complete.",
+		"Another [FALLEN_NATIONALITY] warrior has fallen. [FALLEN_NAME] did their part.",
+		"[FALLEN_NAME] fought bravely. May the gods receive them kindly."
+	],
+	"disliked": [
+		"[FALLEN_NAME] and I had our differences, but they died a soldier's death.",
+		"Despite everything, [FALLEN_NAME] stood in the line when it mattered."
+	],
+	"rival": [
+		"[FALLEN_NAME] was my rival, but I respected them. They died as they lived - stubbornly.",
+		"We competed in everything. Now [FALLEN_NAME] has won the final contest - a glorious death."
+	]
+}

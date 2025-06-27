@@ -1,0 +1,18 @@
+{
+	"Macedonian": [
+		"Alexander", "Philip", "Antipater", "Parmenion", "Cleitus",
+		"Hephaestion", "Ptolemy", "Perdiccas", "Craterus", "Nearchus"
+	],
+	"Greek": [
+		"Leonidas", "Aristides", "Themistocles", "Pericles", "Socrates",
+		"Xenophon", "Epaminondas", "Agesilaus", "Lysander", "Alcibiades"
+	],
+	"Egyptian": [
+		"Amenhotep", "Ramesses", "Thutmose", "Seti", "Horemheb",
+		"Khafra", "Senusret", "Amenemhat", "Kamose", "Ahmose"
+	],
+	"Persian": [
+		"Cyrus", "Darius", "Xerxes", "Artaxerxes", "Cambyses",
+		"Bardiya", "Hystaspes", "Mardonius", "Tissaphernes", "Pharnabazus"
+	]
+}

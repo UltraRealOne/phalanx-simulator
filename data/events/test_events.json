@@ -1,0 +1,119 @@
+[
+	{
+		"id": "test_event_1",
+		"name": "Soldier's Dilemma",
+		"type": "peaceful",
+		"text": "[SOLDIER1] is faced with a moral choice. A fellow soldier has stolen rations, but [SOLDIER1] is the only witness.",
+		"trigger_tags": ["peaceful", "any"],
+		"trigger_chance": 1.0,
+		"can_repeat": true,
+		"requires_soldiers": 1,
+		"choices": [
+			{
+				"text": "Report the theft",
+				"id": "report",
+				"consequences": [
+					{
+						"type": "stat_change",
+						"target": "self",
+						"stat": "morale",
+						"value": -2,
+						"text": "[SOLDIER] feels conflicted about reporting a comrade"
+					}
+				]
+			},
+			{
+				"text": "Keep quiet",
+				"id": "quiet",
+				"consequences": [
+					{
+						"type": "add_trait",
+						"target": "self",
+						"trait": "Disciplined",
+						"text": "[SOLDIER] gains the Disciplined trait"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "test_event_2",
+		"name": "Training Accident",
+		"type": "peaceful",
+		"text": "During training, [SOLDIER1] accidentally injures [SOLDIER2].",
+		"trigger_tags": ["peaceful"],
+		"trigger_chance": 0.5,
+		"can_repeat": true,
+		"requires_soldiers": 2,
+		"choices": [
+			{
+				"text": "Take responsibility",
+				"id": "responsible",
+				"consequences": [
+					{
+						"type": "stat_change",
+						"target": "self",
+						"stat": "morale",
+						"value": 1
+					},
+					{
+						"type": "wound",
+						"target": "other"
+					}
+				]
+			},
+			{
+				"text": "Blame the equipment",
+				"id": "blame",
+				"consequences": [
+					{
+						"type": "stat_change",
+						"target": "self",
+						"stat": "morale",
+						"value": -1
+					},
+					{
+						"type": "wound",
+						"target": "other"
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": "test_event_3",
+		"name": "Brave Action",
+		"type": "battle",
+		"text": "[SOLDIER1] sees an opportunity for a heroic action!",
+		"trigger_tags": ["battle"],
+		"trigger_chance": 0.7,
+		"requires_soldiers": 1,
+		"soldier_filters": ["trait:Iron Body"],
+		"choices": [
+			{
+				"text": "Charge forward!",
+				"id": "charge",
+				"consequences": [
+					{
+						"type": "stat_change",
+						"target": "self",
+						"stat": "andreia",
+						"value": 2
+					}
+				]
+			},
+			{
+				"text": "Hold position",
+				"id": "hold",
+				"consequences": [
+					{
+						"type": "stat_change",
+						"target": "self",
+						"stat": "logos",
+						"value": 1
+					}
+				]
+			}
+		]
+	}
+]

@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=3 uid="uid://cno7f56ibf31l"]
+
+[ext_resource type="Script" uid="uid://blmydk2u6b8ek" path="res://scripts/ui/funeral_screen.gd" id="1_svfu7"]
+
+[node name="FuneralScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_svfu7")
+
+[node name="BackgroundFade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.705882)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(600, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -250.0
+offset_right = 300.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="FallenSection" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Portrait" type="Control" parent="VBoxContainer/FallenSection"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="VBoxContainer/FallenSection"]
+layout_mode = 2
+
+[node name="DetailsLabel" type="Label" parent="VBoxContainer/FallenSection"]
+layout_mode = 2
+
+[node name="EulogiesSection" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/EulogiesSection"]
+custom_minimum_size = Vector2(500, 200)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="EulogiesVBox" type="VBoxContainer" parent="VBoxContainer/EulogiesSection/ScrollContainer"]
+layout_mode = 2
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2

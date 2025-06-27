@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://ma8t0ufn2qgk"]
+
+[ext_resource type="Script" uid="uid://djpu62ic8oybh" path="res://scripts/ui/replacement_panel.gd" id="1_xnj5e"]
+
+[node name="ReplacementPanel" type="Panel"]
+script = ExtResource("1_xnj5e")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="PositionLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2

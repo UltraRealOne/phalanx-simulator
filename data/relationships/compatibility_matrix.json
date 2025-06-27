@@ -1,0 +1,32 @@
+{
+	"nationalities": {
+		"Macedonian_Greek": 10,
+		"Macedonian_Persian": -15,
+		"Macedonian_Egyptian": 0,
+		"Greek_Persian": -10,
+		"Greek_Egyptian": 5,
+		"Persian_Egyptian": 5
+	},
+	"traits": {
+		"Brave_Brave": 15,
+		"Brave_Coward": -20,
+		"Disciplined_Unruly": -25,
+		"Methodical_Sloppy": -20,
+		"Loyal_Loyal": 20,
+		"Inspiring_Brave": 15,
+		"Inspiring_Coward": 5,
+		"Adaptable_Rigid": -20,
+		"Strategist_Brave": 10,
+		"Strategist_Disciplined": 15,
+		"Moody_Stoic": -10,
+		"Iron Body_Iron Body": 5,
+		"Frail_Frail": 10,
+		"Battle Hardened_Brave": 15,
+		"Battle Hardened_Timid": -5,
+		"Orator_Taciturn": -15,
+		"Inspiring_Inspiring": -5,
+		"Inarticulate_Orator": -10,
+		"Methodical_Adaptable": 15,
+		"Disciplined_Methodical": 10
+	}
+}

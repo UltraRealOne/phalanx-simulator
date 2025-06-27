@@ -1,0 +1,95 @@
+[
+	{
+		"name": "Iron Body",
+		"description": "This soldier has exceptional physical constitution",
+		"type": 0,
+		"category": 0,
+		"modifiers": {
+			"health": 3
+		}
+	},
+	{
+		"name": "Coward",
+		"description": "This soldier lacks courage in battle",
+		"type": 1,
+		"category": 1,
+		"modifiers": {
+			"morale": -2,
+			"andreia": -1
+		}
+	},
+	{
+		"name": "Disciplined",
+		"description": "This soldier follows orders without question",
+		"type": 0,
+		"category": 2,
+		"modifiers": {
+			"andreia": 2
+		}
+	},
+	{
+		"name": "Inspiring",
+		"description": "This soldier motivates those around him",
+		"type": 0,
+		"category": 3,
+		"modifiers": {
+			"logos": 2,
+			"morale": 1
+		}
+	},
+	{
+		"name": "Battle Scarred",
+		"description": "Years of combat have taken their toll",
+		"type": 1,
+		"category": 0,
+		"modifiers": {
+			"health": -1,
+			"andreia": 1
+		}
+	},
+	{
+		"name": "Methodical",
+		"description": "This soldier approaches all tasks with careful planning",
+		"type": 0,
+		"category": 2,
+		"modifiers": {
+			"andreia": 2
+		}
+	},
+	{
+		"name": "Adaptable",
+		"description": "This soldier adjusts quickly to new situations",
+		"type": 0,
+		"category": 3,
+		"modifiers": {
+			"logos": 2
+		}
+	},
+	{
+		"name": "Unruly",
+		"description": "This soldier has difficulty following formation discipline",
+		"type": 1,
+		"category": 2,
+		"modifiers": {
+			"andreia": -2
+		}
+	},
+	{
+		"name": "Sloppy",
+		"description": "This soldier fails to maintain proper equipment and form",
+		"type": 1,
+		"category": 2,
+		"modifiers": {
+			"andreia": -2
+		}
+	},
+	{
+		"name": "Rigid",
+		"description": "This soldier struggles to adapt to changing situations",
+		"type": 1,
+		"category": 3,
+		"modifiers": {
+			"logos": -2
+		}
+	}
+]
